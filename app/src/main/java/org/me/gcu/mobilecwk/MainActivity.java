@@ -1,5 +1,5 @@
 package org.me.gcu.mobilecwk;
-
+//S1822006
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
