@@ -130,7 +130,8 @@
             app:layout_constraintBottom_toTopOf="@+id/plannedRoadworkButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAlignment="center"/>
 
         <Button
             android:id="@+id/plannedRoadworkButton"

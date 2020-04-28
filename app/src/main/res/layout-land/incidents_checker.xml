@@ -38,7 +38,7 @@
         <EditText
             android:id="@+id/enteredRoadIncident"
             android:layout_width="190dp"
-            android:layout_height="33dp"
+            android:layout_height="37dp"
             android:layout_marginBottom="42dp"
             android:inputType="textCapWords"
             app:layout_constraintBottom_toTopOf="@+id/searchIncidentsButton"

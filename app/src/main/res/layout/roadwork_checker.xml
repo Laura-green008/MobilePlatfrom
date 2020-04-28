@@ -88,7 +88,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/roadworkButton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAlignment="center"/>
 
         <Button
             android:id="@+id/roadworkButton"

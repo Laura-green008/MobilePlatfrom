@@ -99,17 +99,14 @@
 
         <TextView
             android:id="@+id/roadworkErrorMessage"
-            android:layout_width="10dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="354dp"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
             android:layout_marginTop="2dp"
-            android:layout_marginEnd="368dp"
             android:layout_marginBottom="2dp"
             app:layout_constraintBottom_toTopOf="@+id/roadworkButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/roadworksEditRoad" />
+            app:layout_constraintTop_toBottomOf="@+id/roadworksEditRoad"
+            tools:layout_editor_absoluteX="11dp"
+            android:textAlignment="center"/>
 
         <Button
             android:id="@+id/roadworkButton"
