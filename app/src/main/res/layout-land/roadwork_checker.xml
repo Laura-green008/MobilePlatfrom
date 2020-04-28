@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/swaptoCurrent"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="252dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#009688"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="Current"
+            android:textColor="#FFFFFF"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/roadworksTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <Button
+            android:id="@+id/swaptoPlanned"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="275dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#009688"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="Planned"
+            android:textColor="#FFFFFF"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/roadworksTitle"
+            app:layout_constraintEnd_toStartOf="@+id/swaptoCurrent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/roadworksTitle"
+            android:layout_width="661dp"
+            android:layout_height="23dp"
+
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="2dp"
+            android:text="Roadworks Checker"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/roadworksEnterRoadHere"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/roadworksEnterRoadHere"
+            android:layout_width="588dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="2dp"
+            android:text="Enter Road Name"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/roadworksEditRoad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roadworksTitle" />
+
+        <EditText
+            android:id="@+id/roadworksEditRoad"
+            android:layout_width="588dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="7dp"
+            android:inputType="textCapWords"
+            app:layout_constraintBottom_toTopOf="@+id/roadworkErrorMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roadworksEnterRoadHere" />
+
+        <TextView
+            android:id="@+id/roadworkErrorMessage"
+            android:layout_width="10dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="354dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="368dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/roadworkButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roadworksEditRoad" />
+
+        <Button
+            android:id="@+id/roadworkButton"
+            android:layout_width="88dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="323dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#009688"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="Search"
+            android:textColor="#FFFFFF"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/roadworksRecyclerview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roadworkErrorMessage" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/roadworksRecyclerview"
+            android:layout_width="335dp"
+            android:layout_height="165dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginEnd="191dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

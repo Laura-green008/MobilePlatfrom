@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/incidentsCheckerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="Incidents Checker"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/enterRoadIncident"
+            android:layout_width="395dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:text="Enter Road Name"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/incidentsCheckerTitle" />
+
+        <EditText
+            android:id="@+id/enteredRoadIncident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:drawableTint="#009688"
+            android:inputType="textCapWords"
+            android:textColorHighlight="#009688"
+            android:textColorLink="#00BCD4"
+            app:layout_constraintBottom_toTopOf="@+id/searchIncidentsButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterRoadIncident" />
+
+        <TextView
+            android:id="@+id/incidentsErrrorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchIncidentsButton" />
+
+        <Button
+            android:id="@+id/searchIncidentsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#009688"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="Search for Incidents"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enteredRoadIncident" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleviewIncidents"
+            android:layout_width="match_parent"
+            android:layout_height="449dp"
+            android:layout_marginTop="23dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/incidentsErrrorMessage"></androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

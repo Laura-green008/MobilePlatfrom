@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/plannedSwaptoCurrent"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="100dp"
+            android:backgroundTint="#009688"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="Current"
+            android:textColor="#FFFFFF"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/plannedRoadworksTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plannedSwaptoPlanned"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/plannedSwaptoPlanned"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="9dp"
+            android:backgroundTint="#009688"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="Planned"
+            android:textColor="#FFFFFF"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/plannedRoadworksTitle"
+            app:layout_constraintEnd_toStartOf="@+id/plannedSwaptoCurrent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/plannedRoadworksTitle"
+            android:layout_width="385dp"
+            android:layout_height="20dp"
+
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="2dp"
+            android:text="Planned Roadworks Checker"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/plannedRoadworksEnterRoadHere"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plannedRoadworksEnterRoadHere"
+            android:layout_width="386dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="2dp"
+            android:text="Enter Road Name if Wanted"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/plannedRoadworksEditRoad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plannedRoadworksTitle" />
+
+        <EditText
+            android:id="@+id/plannedRoadworksEditRoad"
+            android:layout_width="290dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="59dp"
+            android:inputType="textCapWords"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plannedRoadworksEnterRoadHere" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="141dp"
+            android:layout_marginBottom="2dp"
+            android:text="Enter Date if Wanted"
+            app:layout_constraintBottom_toTopOf="@+id/plannedRoadworksDateEdit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plannedRoadworksEditRoad" />
+
+        <EditText
+            android:id="@+id/plannedRoadworksDateEdit"
+            android:layout_width="301dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="2dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/plannedRoadworkErrorMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/plannedRoadworkErrorMessage"
+            android:layout_width="352dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/plannedRoadworkButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plannedRoadworksDateEdit" />
+
+        <Button
+            android:id="@+id/plannedRoadworkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#009688"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="Search"
+            android:textColor="#FFFFFF"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/plannedRoadworksRecyclerview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plannedRoadworkErrorMessage" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/plannedRoadworksRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="385dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plannedRoadworkButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

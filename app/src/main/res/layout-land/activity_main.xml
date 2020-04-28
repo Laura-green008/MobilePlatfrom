@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  MPD XML Starter code Semester B Session 2018 2019  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/salutation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Mobile Platform Development"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/roadWorksButton"
+            android:layout_width="176dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginBottom="213dp"
+            android:backgroundTint="#009688"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="Road Works"
+            android:textColor="#FAF7F7"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/salutation" />
+
+        <Button
+            android:id="@+id/incidentsButton"
+            android:layout_width="176dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="187dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginBottom="213dp"
+            android:backgroundTint="#009688"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="Incidents"
+            android:textColor="#FFFFFF"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/roadWorksButton"
+            app:layout_constraintTop_toBottomOf="@+id/salutation" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/jounreyPlannerStartButton"-->
+        <!--            android:layout_width="176dp"-->
+        <!--            android:layout_height="45dp"-->
+        <!--            android:layout_marginStart="66dp"-->
+        <!--            android:layout_marginTop="68dp"-->
+        <!--            android:layout_marginEnd="51dp"-->
+        <!--            android:backgroundTint="#009688"-->
+        <!--            android:bottomLeftRadius="10dp"-->
+        <!--            android:bottomRightRadius="10dp"-->
+        <!--            android:text="Journey Planner"-->
+        <!--            android:textColor="#FFFFFF"-->
+        <!--            android:topLeftRadius="10dp"-->
+        <!--            android:topRightRadius="10dp"-->
+        <!--            app:layout_constraintEnd_toStartOf="@+id/incidentsButton"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/roadWorksButton"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/salutation" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
